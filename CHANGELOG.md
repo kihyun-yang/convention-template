@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.3.0](https://github.com/kihyun-yang/convention-template/compare/v1.2.0...v1.3.0) (2021-09-03)
+
+
+### Features
+
+* **jacoco:** jacoco를 통한 테스트 결과 리포트 ci 기능 추가 ([3def1af](https://github.com/kihyun-yang/convention-template/commit/3def1af65b14c97d332e9306a9f644e874cd8d77))
+
 # [1.2.0](https://github.com/kihyun-yang/convention-template/compare/v1.1.0...v1.2.0) (2021-09-03)
 
 
