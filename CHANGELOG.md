@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.3.1](https://github.com/kihyun-yang/convention-template/compare/v1.3.0...v1.3.1) (2021-09-03)
+
+
+### Bug Fixes
+
+* **버그:** 버그 수정 ([ab7f317](https://github.com/kihyun-yang/convention-template/commit/ab7f31775325bcf87c53a93f99e533845f8a0b78))
+
 # [1.3.0](https://github.com/kihyun-yang/convention-template/compare/v1.2.0...v1.3.0) (2021-09-03)
 
 
