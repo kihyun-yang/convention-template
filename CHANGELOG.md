@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.2.0](https://github.com/kihyun-yang/convention-template/compare/v1.1.0...v1.2.0) (2021-09-03)
+
+
+### Features
+
+* **로깅:** 로그 추가 ([b4bab3d](https://github.com/kihyun-yang/convention-template/commit/b4bab3dc5db587885cf1f22fd7b64f6630726c68))
+
 # [1.1.0](https://github.com/kihyun-yang/convention-template/compare/v1.0.0...v1.1.0) (2021-09-03)
 
 
