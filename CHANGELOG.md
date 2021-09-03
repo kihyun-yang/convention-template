@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.1.0](https://github.com/kihyun-yang/convention-template/compare/v1.0.0...v1.1.0) (2021-09-03)
+
+
+### Features
+
+* **gradle:** gradle 설정파일 추가 ([a83665d](https://github.com/kihyun-yang/convention-template/commit/a83665d425fae56115ceec22266f30ce7f22b304))
+
 # 1.0.0 (2021-09-03)
 
 
