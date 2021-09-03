@@ -1,4 +1,4 @@
-package com.example.conventiontemplate;
+package com.example.conventiontemplate.foo;
 
 public class JavaFoo {
 
