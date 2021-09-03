@@ -6,12 +6,12 @@ import org.junit.jupiter.api.Test;
 
 class JavaFooTest {
 
-    private JavaFoo javaFoo = new JavaFoo();
+    private final JavaFoo javaFoo = new JavaFoo();
 
     @Test
     public void partiallyCoveredHelloMethodTest() {
-        String actual = javaFoo.hello("펭");
-        assertEquals(actual, "하");
+        String actual = javaFoo.callMe();
+        assertEquals(actual, "hello world");
     }
 
 }
