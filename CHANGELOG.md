@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.4.0](https://github.com/kihyun-yang/convention-template/compare/v1.3.1...v1.4.0) (2021-09-03)
+
+
+### Features
+
+* **jacoco:** jacoco 설정 변경 ([9d2f111](https://github.com/kihyun-yang/convention-template/commit/9d2f111fda091fb6712e33cec98f9946cf406169))
+
 ## [1.3.1](https://github.com/kihyun-yang/convention-template/compare/v1.3.0...v1.3.1) (2021-09-03)
 
 
