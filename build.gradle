@@ -40,10 +40,23 @@ jacocoTestReport {
         xml.enabled true
         csv.enabled false
 
-//  각 리포트 타입 마다 리포트 저장 경로를 설정할 수 있습니다.
-//  html.destination file("$buildDir/jacocoHtml")
-//  xml.destination file("$buildDir/jacoco.xml")
+        //  각 리포트 타입 마다 리포트 저장 경로를 설정할 수 있습니다.
+        //  html.destination file("$buildDir/jacocoHtml")
+        //  xml.destination file("$buildDir/jacoco.xml")
     }
+
+    // 디렉터리 경로를 적어주어야 함
+    afterEvaluate {
+//        classDirectories.setFrom(files(classDirectories.files.collect {
+//            fileTree(dir: it, exclude: ["**/conventiontemplate"])
+//        }))
+
+//        classDirectories.setFrom(files(classDirectories.files.collect {
+//            fileTree(dir: it,
+//                    exclude: [] + Qdomains)
+//        }))
+    }
+
     finalizedBy 'jacocoTestCoverageVerification'
 }
 
@@ -51,35 +64,24 @@ jacocoTestCoverageVerification {
     // 이 커버리지 기준은 이 글의 맨 아래에서 다시 설명하겠습니다.
     violationRules {
         rule {
-            // 'element'가 없으면 프로젝트의 전체 파일을 합친 값을 기준으로 합니다.
-            // 위의 리포트에서 'Total'로 표시된 부분입니다.
-            limit {
-                // 'counter'를 지정하지 않으면 default는 'INSTRUCTION'
-                // 'value'를 지정하지 않으면 default는 'COVEREDRATIO'
-                minimum = 0.30
-            }
-        }
-        // 여러 룰을 생성할 수 있습니다.
-        rule {
-            // 룰을 간단히 켜고 끌 수 있습니다.
             enabled = true
 
             // 룰을 체크할 단위는 클래스 단위
             element = 'CLASS'
 
-            // 브랜치 커버리지를 최소한 90% 만족시켜야 합니다.
+            // 브랜치 커버리지를 최소한 30% 만족시켜야 합니다.
             limit {
                 counter = 'BRANCH'
                 value = 'COVEREDRATIO'
                 minimum = 0.30
             }
 
-            // 라인 커버리지를 최소한 80% 만족시켜야 합니다.
-            limit {
-                counter = 'LINE'
-                value = 'COVEREDRATIO'
-                minimum = 0.40
-            }
+            // 라인 커버리지를 최소한 40% 만족시켜야 합니다.
+//            limit {
+//                counter = 'LINE'
+//                value = 'COVEREDRATIO'
+//                minimum = 0.40
+//            }
 
             // 빈 줄을 제외한 코드의 라인수를 최대 200라인으로 제한합니다.
             limit {
@@ -88,10 +90,7 @@ jacocoTestCoverageVerification {
                 maximum = 200
             }
 
-            // 커버리지 체크를 제외할 클래스들
-            excludes = [
-                'com.example.conventiontemplate.ConventionTemplateApplication'
-            ]
+            excludes = ["**/ConventionTemplateApplication**"]
         }
     }
 }
